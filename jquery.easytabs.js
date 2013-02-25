@@ -3,6 +3,7 @@
  
 	    var defaults = {
 	      'activeClass' : 'active',
+	      'transition' : 200
 	    };
 
 	    var settings = $.extend( {}, defaults, options );
@@ -16,8 +17,8 @@
 				elem.find('> ul > li').removeClass(settings.activeClass);
 				$(this).parent().addClass(settings.activeClass);
 				var currentTab = $(this).attr('href');
-				elem.find('> div').fadeOut(200);
-				$(currentTab).fadeIn(200);
+				elem.find('> div').fadeOut(settings.transition);
+				$(currentTab).fadeIn(settings.transition);
 				return false;
 			});
 	    });
