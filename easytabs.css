@@ -1,0 +1,32 @@
+/*bloco que envolve as tabs*/
+.tab-wrapper{
+    position:relative;
+    width:100%;
+    float:left;
+    text-align:center;
+}
+/*divs tabs*/
+.tab-wrapper > div{
+    width:100%;
+    position:absolute;
+
+}
+/*bloco de títulos das tabs*/
+.tab-wrapper > ul{
+    display:inline-block;
+    text-transform:uppercase;
+}
+.tab-wrapper > ul > li{
+    margin:0 3px;
+}
+.tab-wrapper > ul > li > a{
+    font-size:16px;
+    padding:3px 0;
+    width:170px;
+    display:block;
+}
+.tab-wrapper > ul > li.active > a{
+    border-top:solid 1px;
+    border-bottom:solid 1px;
+    margin-top:-1px;
+}
